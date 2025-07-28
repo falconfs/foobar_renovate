@@ -63,19 +63,6 @@
         "cluster/run/**/kustomization.yaml"
       ],
       "automerge": false
-    },
-    {
-      "matchPackageNames": [
-        "releasesipenacr.azurecr.io/grid-structure/neo4j-operator",
-        "releasesipenacr.azurecr.io/ipen/apim/api-controller",
-        "releasesipenacr.azurecr.io/ipen/service-platform/envoy-external-authorization-iam-api-go",
-        "snapshotsipenacr.azurecr.io/ipen/service-platform/envoy-external-authorization-iam-api-go",
-        "releasesipenacr.azurecr.io/ipen/service-platform/envoy-wasm-coraza-waf",
-        "snapshotsipenacr.azurecr.io/ipen/service-platform/envoy-wasm-coraza-waf",
-        "releasesipenacr.azurecr.io/ipen/service-platform/isp-metrics-exporter",
-        "snapshotsipenacr.azurecr.io/ipen/service-platform/isp-metrics-exporter"
-      ],
-      "versioning": "regex:^(?<patch>[0-9].*)"
     }
   ]
 }
