@@ -1,0 +1,15 @@
+{
+  "customManagers": [
+    {
+      "customType": "jsonata",
+      "fileFormat": "yaml",
+      "managerFilePatterns": [
+        "/\\/chart\\.yaml$/"
+      ],
+      "matchStrings": [
+        "{\"depName\": name, \"registryUrl\": repo, \"currentValue\": version}"
+      ],
+      "datasourceTemplate": "helm"
+    }
+  ]
+}
