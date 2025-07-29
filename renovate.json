@@ -22,7 +22,7 @@
       "matchStrings": [
         "{\"depName\": name, \"registryUrl\": repo, \"currentValue\": version}"
       ],
-      "datasourceTemplate": "helm"
+      "datasourceTemplate": "docker"
     }
   ],
   "packageRules": [
@@ -32,37 +32,10 @@
         "custom.jsonata"
       ],
       "matchDatasources": [
-        "helm"
+        "docker"
       ],
       "automerge": false,
       "automergeType": "pr"
-    },
-    {
-      "matchManagers": "kustomize",
-      "commitMessagePrefix": "{{packageFileDir}}: ",
-      "additionalBranchPrefix": "{{packageFileDir}}-"
-    },
-    {
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "dependencyDashboardApproval": false
-    },
-    {
-      "matchFileNames": [
-        "cluster/poc/**/kustomization.yaml",
-        "cluster/dev/**/kustomization.yaml"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "automergeType": "branch"
-    },
-    {
-      "matchFileNames": [
-        "cluster/run/**/kustomization.yaml"
-      ],
-      "automerge": false
     }
   ]
 }

@@ -1,3 +1,0 @@
-name: gateway-helm
-repo: oci://docker.io/envoyproxy
-version: v1.4.1
