@@ -20,9 +20,9 @@
         "/\\/chart\\.yaml$/"
       ],
       "matchStrings": [
-        "{\"depName\": name, \"currentValue\": version }"
+        "{\"depName\": name, \"registryUrl\": repo, \"currentValue\": version, \"datasource\": datasource }"
       ],
-      "datasourceTemplate": "docker"
+      "datasourceTemplate": "{{datasource}}"
     }
   ],
   "packageRules": [
