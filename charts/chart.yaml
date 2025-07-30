@@ -1,4 +1,4 @@
 name: envoyproxy/gateway-helm
-repo: oci://docker.io/envoyproxy
+repo: docker.io
 version: v1.4.1
 datasource: docker
