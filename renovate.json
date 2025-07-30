@@ -22,7 +22,7 @@
       "matchStrings": [
         "{\"depName\": name, \"registryUrl\": repo, \"currentValue\": version}"
       ],
-      "datasourceTemplate": "docker"
+      "datasourceTemplate": "helm"
     }
   ],
   "packageRules": [
@@ -32,7 +32,7 @@
         "custom.jsonata"
       ],
       "matchDatasources": [
-        "docker"
+        "helm"
       ],
       "automerge": false,
       "automergeType": "pr"
